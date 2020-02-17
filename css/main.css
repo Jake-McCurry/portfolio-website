@@ -1,0 +1,161 @@
+/********************* My Personal Website *********************/
+
+/********************* BASE STYLES *********************/
+
+body {
+    color: #f7f5f5;
+    font-family: 'Open Sans', Sans-Serif;
+}
+
+.content-wrapper {
+    width: 1400px;
+}
+
+.full-width {
+    margin: 0;
+    width: 1400px;
+}
+
+.half-width {
+    float: left;
+    margin: 55px 20px 30px 70px;
+    width: 600px;
+}
+
+.third-width {
+    float: left;
+    margin-left: 55px;
+    width: 400px;
+}
+
+
+/********************** Nav & Header **********************/
+
+#header {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    height: 801px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul li a:link, a:visited {
+    float: right;
+    font-size: 16px;
+    padding-right: 45px;
+    text-decoration: none;
+}
+
+#nav {
+    left: 20%;    
+    position: absolute;
+    top: 1%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-text {
+    left: 50%;    
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.PNW {
+    color: #3CAEA3;
+}
+
+#jake {
+    color: #ED553B;
+}
+
+
+/********************** PORTFOLIO **********************/
+
+#portfolio {
+    background-color: #263948;
+    display: inline-block;
+    height: 1549px;
+    margin: 0px;
+}
+
+#jubilee-text #mccurry-text #rogue-text {
+    float: left;
+    margin: 0 20px 30px 80px;
+}
+
+h3 {
+    Margin: 0 20px 0 0;
+}
+
+span {
+    color: #ED553B;
+}
+
+
+/********************** ABOUT **********************/
+
+#about {
+    color: black;
+    background-image: url("../img/about-me.png");
+    height: 550px;
+    position: relative;
+    text-align: center;
+}
+
+.about-text {
+    left: 35%;
+    position: absolute;
+    text-align: left;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#about-head {
+    margin: 0 0 70px 400px;
+    text-align: center;
+}
+
+
+/********************** Lets Connect (Contact) **********************/
+
+#contact {
+    background-color: #263948;
+    clear: both;
+    display: inline-block;
+    height: 450px;
+    padding-top: 50px;
+    text-align: center;
+} 
+
+h2 {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 16px;
+}
+
+a {
+    color: #F6D55C;
+}
+
+#copyright {
+    float: left;
+    padding-top: 150px;
+}
+
+#social-links {
+    margin-left: 80px;  
+}
