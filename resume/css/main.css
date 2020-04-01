@@ -78,6 +78,7 @@ nav ul li a:link, a:visited {
   font-size: 16px;
   padding-right: 45px;
   text-decoration: none;
+  
 }
 
 #nav {
@@ -85,14 +86,26 @@ nav ul li a:link, a:visited {
   position: absolute ;
   top: 3%;
   transform: translate(-50%, -50%);
+ 
 }
 
 #nav-list {
   list-style: none;
+  color: #F6D55C;
+  text-shadow: 1px 1px 2px rgb(54, 52, 52);
+
 }
 
 .nav {
   float: left;
+  word-wrap: break-word;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+   
 }
 
 li a {
