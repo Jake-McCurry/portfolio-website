@@ -1,10 +1,13 @@
 /********************* RESUME My Personal Website *********************/
+html {
+  font-size: 16px;
+}
 
 body {
   background-color: #f2f2f2;
   font-family: 'Open Sans', Sans-Serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1em;
   color: #555;
   
 
@@ -22,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------- Paragraph and Typographic  -------------- */
 p {
   line-height: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .centered {
@@ -44,9 +47,9 @@ a {
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
   text-decoration: none;
   outline: 0;
+  color: #263948;
 }
 
 a:before,
@@ -74,56 +77,42 @@ a:after {
 /*------------------------ NAVIGATION  ------------------------ */
 
 nav ul li a:link, a:visited {
-  float: right;
-  font-size: 16px;
-  padding-right: 45px;
+  display: flex;
+  font-size: 1em;
   text-decoration: none;
-  
+  font-weight: bold;
 }
 
-#nav {
-  left: 28%;    
-  position: absolute ;
-  top: 3%;
-  transform: translate(-50%, -50%);
- 
+nav,
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    background-color: #263948;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-#nav-list {
-  list-style: none;
-  color: #F6D55C;
-  text-shadow: 1px 1px 2px rgb(54, 52, 52);
-
+header li,
+header a
+ {
+    color: white;
 }
 
-.nav {
-  float: left;
-  word-wrap: break-word;
-
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-   
-}
-
-li a {
-  display: block;
-  padding: 16px;
+header a:hover {
+  color: rgb(240, 240, 145);
 }
 
 /*------------------------ Header Wrap  ------------------------ */
 .header {
   background: #1CBCAD;
-  background: url(../img/hero2-pond.jpg) no-repeat center top;
-  padding-top:140px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 500px;
-  width: 100%;
-  
+  background: url(../img/hero2-pond.jpg) no-repeat center #263948;
+  background-size: cover;
+  flex-flow: row nowrap;  
+  padding-bottom: 0%;
+
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -135,31 +124,45 @@ li a {
   background-size: cover;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .header h1 {
-  font-size: 80px;
-  color: white;
+    color: white;
+    font-size: 3.75em;
+    font-weight: bold;
+    padding: 35% 5% 0% 5%;
+    margin: 0;
+    width: 90%;
+    text-shadow: 3px -4px 20px black;
 }
 
 .header h3 {
   font-size: 20px;
-  color: white;
+  color: black;
+  padding: 20% 0 0 0;
 }
 
 .header h3 a {
-  color: #fff;
+  color: black;
+  padding: 20% 0 0 0;
 }
+
+.header h3 a:hover {
+  color: rgb(240, 240, 145);
+}
+
 
 /*------------------------ About Wrap  ------------------------ */
 .about {
   background: #2c3e50;
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 60px;
   color: white;
 } 
 
-.about h5, p {
-  color: white;
-}
 
 .about i {
   color: white;
@@ -188,6 +191,12 @@ li a {
 
 span {
   color: #F6D55C;
+}
+
+/*------------------------ WORK  ------------------------ */
+
+.row {
+  margin: 0;
 }
 
 /*------------------ Social Icons -------------------- */
@@ -231,7 +240,7 @@ sm {
   text-transform: uppercase;
 }
 
-.container .row p.tight {
+.container-desc .row p.tight {
   margin-bottom: 10px;
 }
 

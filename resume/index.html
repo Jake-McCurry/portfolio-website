@@ -28,28 +28,29 @@
 
 <!--************************* HEADER *************************-->
 
-        <div id="header" class="header">
-            <div class="container">
-                <div id="nav">
-                    <nav>
-                        <ul id="nav-list">
-                            <li class="nav"><a href="../index.html">home</a></li>
-                            <li class="nav"><a href="#about">about</a></li>
-                            <li class="nav"><a href="#education">education</a></li>
-                            <li class="nav"><a href="#work">work</a></li>
-                            <li class="nav"><a href="#accomplishments">accomplishments</a></li>
-                            <li class="nav"><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav> 
-                </div>
+        <header class="header">
+            <section>
+                <nav>
+                    <ul>
+                        <li class="nav"><a href="../index.html">home</a></li>
+                        <li class="nav"><a href="#about">about</a></li>
+                        <li class="nav">services</li>
+                        <li class="nav"><a href="#../portfoliowebsite/index.htnml">portfolio</a></li>     
+                        <li class="nav"><a href="#contact">contact</a></li>
+                    </ul>
+                </nav> 
+            </section>
+
+            <section class="container">
+                <div class="header-divider"></div>        
                 <div class="row centered">
                     <div class="col-lg-12">
                         <h1>Jake McCurry</h1>
                         <h3>Web Developer | <a href="mailto:hello@jakemccurry.com" target="_blank">hello@jakemccurry.com</a></h3>
                     </div><!--/.col-lg-12 -->
                 </div><!--/.row -->
-            </div><!--/.container -->
-        </div><!--/.header -->
+            </section><!--/.container -->
+        </header><!--/.header -->
         
 
 <!--************************* ABOUT *************************-->
@@ -127,7 +128,7 @@
         
          <!--*********** WORK **********-->
 
-        <div class="container desc" id="work">
+        <div class="container-desc" id="work">
             <div class="row">
                     <div class="col-lg-2 col-lg-offset-1">
                         <h5>WORK</h5>
@@ -280,42 +281,33 @@
         </div><!--/.container -->
       
         
-<!--************************* Contact *************************-->
-
-        <section id="contact" name="contact">
-            <div id="footwrap" class="footer">
-                <div class="container">
-                    <div class="row">
-                    
-                        <div class="col-lg-2 col-lg-offset-1">
-                            <h5>CONTACT</h5>
-                        </div>
-
-                    <!--**** EMAIL **** -->
-                        <div class="col-lg-6">
-                            <p><t>hello@jakemccurry.com</t><br/>
-                                <a href="mailto:hello@jakemccurry.com" target="_blank" class="mail">Email Me</a> <br/>
-                            </p>
-
-                    <!--**** ADDRESS **** -->
-                            <p><t>Location</t><br/>
-                                Mossyrock <br/>
-                                Washington State <br/>
-                                United States of America<br/>
-                            </p>
-                        </div>
-
-                    <!--**** SOCIAL LINKS **** -->
-                        <div class="col-lg-3">
-                            <p><sm>SOCIAL LINKS</sm></p>
-                            <p>
-                                <a href="https://github.com/Jake-McCurry" target="_blank"><img src="img/icon-github.png"></a>
-                                <a href="#" target="_blank"><img src="img/icon-linkedin.png"></a>
-                            </p>
-                        </div>
-                    </div><!--/.row -->
-                </div><!--/.container -->
-            </div><!--/ #footer -->
-        </section>
+<!-- ********************** FOOTER ********************** -->
+        <footer class="contact">
+            <div class="footer-wrapper">
+                <div class="connect">
+                    <h2>let's connect</h2>
+                </div>
+                <div class="email">
+                    <p><a href="mailto:hello@jakemccurry.com">hello@jakemccurry.com</a></p>
+                </div>
+                <div class="social-links">
+                    <article>
+                        <p class="fontawesome-icon">
+                            <a href="https://www.linkedin.com/in/jakewmccurry/">
+                        <i class="fab fa-linkedin"></i></a>
+                        </p>
+                    </article>
+                    <article>
+                        <p class="fontawesome-icon">
+                            <a href="https://github.com/Jake-McCurry">
+                        <i class="fab fa-github"></i></a>
+                        </p>
+                    </article>
+                </div>
+                <div class="copyright">
+                    <p> Copyright 2020 | Jake McCurry </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

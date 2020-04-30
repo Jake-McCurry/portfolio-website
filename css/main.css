@@ -1,69 +1,243 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #e2e3ed;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
 /*-------------------- My Personal Website --------------------*/
 
 /*-------------------- BASE STYLES --------------------*/
 
+html {
+    font-size: 16px;
+}
+
 body {
     color: #f7f5f5;
     font-family: 'Open Sans', Sans-Serif;
+    font-size: 1em;
+}
+
+ul, 
+ol {
+  list-style-type: none;
+}
+
+li,
+a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+a:hover, i:hover {
+   color: rgb(240, 240, 145);
 }
 
 .content-wrapper {
-    width: 1400px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.full-width {
-    margin: 0;
-    width: 1400px;
-}
+/*-------------------- GLOBAL & MOBILE | HEADER & FOOTER --------------------*/
 
-.half-width {
-    float: left;
-    margin: 55px 20px 30px 70px;
-    width: 600px;
-}
-
-.third-width {
-    float: left;
-    margin-left: 55px;
-    width: 400px;
-}
-
-
-/*-------------------- Nav & Header --------------------*/
-
-#header {
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    height: 801px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-}
+/* HEADER */
 
 nav ul li a:link, a:visited {
-    float: right;
-    font-size: 16px;
-    padding-right: 45px;
+    display: flex;
+    font-size: 1em;
     text-decoration: none;
+    font-weight: bold;
 }
 
-#nav {
-    left: 20%;    
-    position: absolute;
-    top: 1%;
-    transform: translate(-50%, -50%);
+nav,
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    background-color: #263948;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.landing-text {
-    left: 50%;    
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+li,
+a,
+i {
+    color: white;
 }
 
-.PNW {
-    color: #3CAEA3;
+.header-divider { 
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border-top: solid 1px gray;
+}
+
+/* FOOTER */
+
+.contact {
+    background-color: #263948;
+    display: flex;
+    padding-top: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 1.25rem;
+} 
+
+.footer-wrapper {
+    display: flex;
+    width: 80%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.connect {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-links,
+.email {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: .875em;
+    margin: 0;
+}
+
+.social-links  {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 50%;
+}
+
+.copyright {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: .5em;
+}
+
+
+/* -------------- Mobile Styles - Homepage  -------------- */
+      
+/* Hero Area */
+
+.hero {
+    display: flex;
+    background: url("../img/hero.jpg") center no-repeat #263948 ;
+    background-size: cover;
+    flex-flow: row nowrap;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10% 5% 20% 5%;
+    margin: 0;
+    width: 90%;
 }
 
 #jake {
@@ -71,20 +245,53 @@ nav ul li a:link, a:visited {
 }
 
 
-/*-------------------- PORTFOLIO --------------------*/
+/* PORTFOLIO */
 
-#portfolio {
+.portfolio {
     background-color: #263948;
-    display: inline-block;
-    height: 1549px;
-    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0;
 }
 
-#jubilee-text #mccurry-text #rogue-text {
-    float: left;
-    margin: 0 20px 30px 80px;
+
+.portfolio article {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
 }
 
+.portfolio article figure {
+    width: 100%;
+    display: flex;
+    margin: 5% 0;
+    justify-content: center;
+}
+
+.jubilee-pic {
+    margin: 0;
+    background: url(../img/jubilee-austen.png) center no-repeat #2a423a;
+    background-size: cover;
+}
+
+.rogue-pic {
+    margin: 0;
+    background: url(../img/rogue.png) center no-repeat #2a423a;
+    background-size: cover;
+}
+
+.mccurry-pic {
+    margin: 0;
+    background: url(../img/jake-mccurry.png) center no-repeat #2a423a;
+    background-size: cover;
+}
+
+
+.jubilee h2 {
+    margin: 0 0 50px 0;
+}
 h3 {
     Margin: 0 20px 0 0;
 }
@@ -94,68 +301,46 @@ span {
 }
 
 
-/*-------------------- ABOUT --------------------*/
+/* ABOUT */
 
-#about {
-    color: black;
-    background-image: url("../img/about-me.png");
-    height: 550px;
-    position: relative;
+.about {
+    display: flex;
+    background: url("../img/about-me.png") center no-repeat #263948 ;
+    background-size: cover;
+    flex-flow: row nowrap;
+}
+
+.about article h2 {
+    margin: 2% 0 70px 10px;
     text-align: center;
 }
 
-.about-text {
-    left: 35%;
-    position: absolute;
-    text-align: left;
-    top: 25%;
-    transform: translate(-50%, -50%);
+.about article h3 {
+    padding-left: 2%;
 }
 
-#about-head {
-    margin: 0 0 70px 400px;
-    text-align: center;
+.about-body {
+    display: flex;
+    width: 80%;
+    font-size: .875rem;
 }
 
+.about article p {
+    padding: 0 2% 15% 2%;
+    
+/* ==========================================================================
+   Media Queries for responsive design - override the primary ('mobile first') styles.
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries for responsive design - override the primary ('mobile first') styles.
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries for responsive design - override the primary ('mobile first') styles.
+   ========================================================================== */
 
-/*-------------------- Lets Connect (Contact) --------------------*/
-
-#contact {
-    background-color: #263948;
-    clear: both;
-    display: inline-block;
-    height: 450px;
-    padding-top: 50px;
-    text-align: center;
-} 
-
-h2 {
-    margin-bottom: 70px;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 16px;
-}
-
-a {
-    color: #F6D55C;
-}
-
-#copyright {
-    float: left;
-    padding-top: 150px;
-}
-
-#social-links {
-    margin-left: 80px;  
-}
+   @media only screen and (min-width: 768px) {
+    /* Tablet Breakpoint */
+    /* 64+64+80(8)=768 - Margins: 16.6% */
+    
+    /* General styles */
+  

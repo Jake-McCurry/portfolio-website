@@ -5,122 +5,127 @@
     <head>
         <title>Jake McCurry</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- FontAwesome CDN version 5.5 -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
+
     <body>
-
-        <!-- ********** HEADER SECTION ********** -->
-        <div class="content-wrapper">
-            <header>
-                <div class="full-width" id="header">
-                    <img src="img/drink-coffee.jpg" alt="mountains">
-                    <div id="nav">
-                        <nav>
-                            <ul>
-                                <li><a href="#portfolio">portfolio</a></li>
-                                <li><a href="#about">about</a></li>
-                                <li><a href="#contact">contact</a></li>
-                                <li><a href="../portfolio-website/resume/index.html">resume</a></li>
-                            </ul>
-                        </nav> 
-                    </div>
-                    <div class="landing-text"> Hi, I'm <span id="jake">Jake</span> McCurry, Front-End Developer, based in the <span class="PNW">P</span>acific <span class="PNW">N</span>orth<span class="PNW">w</span>est.
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <!-- ********** PORTFOLIO SECTION ********** -->
-        <section id="portfolio">
-            <div class="full-width">
-                <h2> my portfolio </h2>
-            </div>
-                                            <!-- ***** Jubilee Austen ***** -->
-            <div class="half-width">
-                <img src="img/jubilee-austen.png" alt="jubilee-austen">
-            </div>
-            <div class="half-width" id="jubilee-text">
-                <h3> Jubilee Austen Project </h3>
-                <p> My first project was creating a site for ficticious new developer Jubilee Austen. During a Skillcrush course I built a one page static site from a Photoshop design comp.</p>
-                <p><span>Tools Used:</span> Adobe Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p> 
-                <p><span>Highlight</span>: Learning new technologies (VSC) and skills (floating)! It gave me a sense of wonder (like a child jumping in a puddle for the first time). In the end the clean and organized code filled me with satisfaction and sparked further curiosity of tech. </p>
-                <p><span>Challenge</span>: Learning the tools and technologies above took quite a while. Each time I "jumped in a puddle" I wanted to stay there for hours and just learn.</p>
-            </div>
-                                            <!-- ***** Rogue Pickings ***** -->
-        
-            <div class="half-width" id="rogue-text">
-                <h3> Rogue Pickings Website </h3>
-                <p> Tasked with translating a Photoshop design comp for a food truck business into HTML & CSS I focused on honing my boarders and floating skills. </p>
-                <p><span>Tools Used:</span> Adobe Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p>
-                <p><span>Highlight:</span> New learning is always exciting for me - the box model specifically this time around. </p>
-                <p><span>Challenge:</span> Focusing on borders and floats was challenging in that I had to deepen my understanding of the box model and how each one interacts. This required lots of Googling and article reading.</p>
-            </div>
-            
-            <div class="half-width">
-                <img src="img/rogue-pickings.png" alt="rogue-pickings-site">
-            </div>
-                                            <!-- ***** Personal Site ***** -->
-            <div class="half-width">
-                <img src="img/jake-mccurry.png" alt="jake-mccurry-site">
-            </div>
-           
-            <div class="half-width" id="mccurry-text">
-                <h3> My first personal project! </h3>
-                <p> I had a lot of fun using the Jubilee Austen project as a template to create my first personal site. </p>
-                <p><span>Tools Used:</span> Bluehost | Adobe Photoshop | HTML5 | CSS | Visual Studio Code | W3C HTML & CSS Validation.</p>
-                <p><span>Highlights:</span> Navigating Bluehost | Learning FTP | Editing a personal photo into the hero image </p>
-                <p><span>Challenges:</span> I really wanted to make this a responsive site - I jumped in and did what I could - until I realized I need to learn mroe before going full tilt responive. I also had some trouble with boxes & floating. </p>
-            </div>
-        </section>
-
-        <!-- ********** ABOUT SECTION ********** -->   
-        <section id="about">
-            <div class="full-width">
-                <div class="about-text">  
-                    <h2 id="about-head"> about me </h2>
-                    <h3 class="about-body"> I love coding and learning! </h3>
-                    <p class="about-body"> After discovering just that through Skillcrush, I left the grind and moved my 
-                        growing family to Washington State in January 2020 to hone the necessary 
-                        skills to become a developer. I now am passionate about writing clean and refined code, learning 
-                        new technologies, and spending time with my amazing family in the beautiful Cascade Mountains. </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ********** Contact SECTION ********** -->
-        <section id="contact">
-            <div class="full-width">
-                <h2>let's connect</h2>
-            </div>
-            <div class="third-width">
-                <h3>Hire me</h3>
-                <p><a href="mailto:hello@jakemccurry.com">hello@jakemccurry.com</a></p>
-            </div>
-            <div class="third-width">
-                <h3>Follow me</h3>
-                    <ul id="social-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/jakewmccurry/">
-                                <img src="img/icons8-linkedin-38.png" alt="linkedin icon"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Jake-McCurry">
-                                <img src="img/icons8-github-38.png" alt="github icon"/>
-                            </a>
-                        </li>
+<!-- ********************** HEADER ********************** -->
+        <header>
+            <section class="content-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#about">about</a></li>
+                        <li>services</li>
+                        <li><a href="#portfolio">portfolio</a></li>     
+<!-- ******************************************** 
+    CONSIDER POSTING A RESUME LINK IN THE ABOUT ME SECTION AND 
+    GET RID OF THE RESUME PAGE. CREATE PAGES FRO THE OTHER LINKS.
+******************************************** -->
+                        <li><a href="../portfolio-website/resume/index.html">resume</a></li>                            
+                        <li><a href="#contact">contact</a></li>
                     </ul>
+                 </nav> 
+            </section>
+            <div class="header-divider"></div>        
+         </header>
+
+<!-- ********************** MAIN ********************** -->
+        <main> 
+            <section class="hero"> 
+                <h1> Hi, I'm <span id="jake">Jake</span> McCurry, Front-End Developer of clean & responsive code. </h1>
+            </section>
+
+            <section class="portfolio">
+                <h2> my portfolio </h2>
+                        
+                <!-- ***** Jubilee Austen ***** -->
+                <article> 
+                    <figure class="jubilee-pic">
+                        <img src="img/jubilee-austen.png" alt="Jubliee Austen project picture">
+                    </figure>
+                    <div>
+                        <h3> Jubilee Austen Project </h3>
+                        <p> My first project was creating a site for ficticious new developer Jubilee Austen. For an online tech course I built a one page static site from a Photoshop design comp.</p>
+                        <p><span>Tools Used:</span> Adobe Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p> 
+                        <p><span>Highlight</span>: Learning new technologies (VSC) and skills (floating)! It gave me a sense of wonder (like a child jumping in a puddle for the first time). In the end the clean and organized code filled me with satisfaction and sparked further curiosity of tech. </p>
+                        <p><span>Challenge</span>: Learning the tools and technologies above took quite a while. Each time I "jumped in a puddle" I wanted to stay there for hours and just learn.</p>
+                    </div>
+                </article>                     
+                
+                <!-- ***** Rogue Pickings ***** -->
+                <article> 
+                    <figure class="rogue-pic">
+                        <img src="img/rogue.png" alt="rogue-pickings-site">
+                    </figure>
+                    <div>
+                        <h3> Rogue Pickings Website </h3>
+                        <p> Tasked with translating a Photoshop design comp for a food truck business into HTML & CSS I focused on honing my boarders and floating skills. </p>
+                        <p><span>Tools Used:</span> Adobe Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p>
+                        <p><span>Highlight:</span> New learning is always exciting for me - the box model specifically this time around. </p>
+                        <p><span>Challenge:</span> Focusing on borders and floats was challenging in that I had to deepen my understanding of the box model and how each one interacts. This required lots of Googling and article reading.</p>
+                    </div>
+                </article>
+                
+                <!-- ***** Personal Site ***** -->
+                <article> 
+                    <figure class="mccurry-pic">
+                        <img src="img/jake-mccurry.png" alt="jake-mccurry-site">
+                    </figure>
+                    <div>
+                        <h3> My first personal project! </h3>
+                        <p> I had a lot of fun using the Jubilee Austen project as a template to create my first personal site. </p>
+                        <p><span>Tools Used:</span> Bluehost | Adobe Photoshop | HTML5 | CSS | Visual Studio Code | W3C HTML & CSS Validation.</p>
+                        <p><span>Highlights:</span> Navigating Bluehost | Learning FTP | Editing a personal photo into the hero image </p>
+                        <p><span>Challenges:</span> I really wanted to make this a responsive site - I jumped in and did what I could - until I realized I need to learn mroe before going full tilt responive. I also had some trouble with boxes & floating. </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- ***** ABOUT SECTION ***** -->   
+            <section class="about">
+                <article>
+                     <h2> about me </h2>
+                     <h3 class="about-body"> I love coding and learning! </h3>
+                     <p class="about-body"> After discovering just that through Skillcrush, I left the grind and moved my 
+                            growing family to Washington State in January 2020 to hone the necessary 
+                            skills to become a developer. I now am passionate about writing clean and refined code, learning 
+                            new technologies, and spending time with my amazing family in the beautiful Cascade Mountains. </p>
+                </article>
+            </section>
+        </main>
+
+<!-- ********************** FOOTER ********************** -->
+        <footer class="contact">
+            <div class="footer-wrapper">
+                <div class="connect">
+                    <h2>let's connect</h2>
+                </div>
+                <div class="social-links">
+                    <article>
+                        <p class="fontawesome-icon">
+                            <a href="https://www.linkedin.com/in/jakewmccurry/">
+                          <i class="fab fa-linkedin"></i></a>
+                        </p>
+                    </article>
+                    <article>
+                        <p class="fontawesome-icon">
+                            <a href="https://github.com/Jake-McCurry">
+                          <i class="fab fa-github"></i></a>
+                        </p>
+                    </article>
+                </div>
+                <div class="email">
+                    <p><a href="mailto:hello@jakemccurry.com">hello@jakemccurry.com</a></p>
+                </div>
+                <div class="copyright">
+                    <p> Copyright 2020 | Jake McCurry </p>
+                </div>
             </div>
-            <div class="third-width">
-                <h3>Meet me</h3>
-                <p> Lewis County, WA </p>
-                <p> Let's go to meetups together!</p>
-            </div>
-            <div class="full-width" id="copyright">
-                <p> Copyright 2020 | Jake McCurry </p>
-            </div>
-        </section>
+        </footer>
     </body>
 </html>
