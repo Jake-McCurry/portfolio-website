@@ -1,4 +1,7 @@
-/********************* RESUME My Personal Website *********************/
+/*------------------------ RESUME MY PERSONAL SITE  ------------------------ */
+
+/*------------------------ BASE STYLES  ------------------------ */
+
 html {
   font-size: 16px;
 }
@@ -8,35 +11,22 @@ body {
   font-family: 'Open Sans', Sans-Serif;
   font-weight: 300;
   font-size: 1em;
-  color: #555;
+  color: black;
   
-
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
 
-/*------------------------ Titles  ------------------------ */
+  /*------ Titles  ------ */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', Sans-Serif;
   font-weight: 300;
-  color: #333;
 }
 
-/*-------------- Paragraph and Typographic  -------------- */
-p {
-  line-height: 28px;
-  margin-bottom: 15px;
-}
-
-.centered {
-    text-align: center;
-}
-
-/*------------------------ Links  ------------------------ */
+  /*------ Links  ------ */
  
 a {
   color: #ED553B;
-  word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -61,6 +51,8 @@ a:after {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+  /*------ Bar Separating Sections  ------ */
+
  hr {
   display: block;
   height: 1px;
@@ -70,19 +62,8 @@ a:after {
   padding: 0;
 }
 
-/*---------------------------------------------------
-  SECTION WRAPS
----------------------------------------------------*/
 
 /*------------------------ NAVIGATION  ------------------------ */
-
-nav ul li a:link, a:visited {
-  display: flex;
-  font-size: 1em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 nav,
 nav ul {
     display: flex;
@@ -93,6 +74,13 @@ nav ul {
     background-color: #263948;
     width: 100%;
     justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav ul li a:link, a:visited {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 header li,
@@ -105,9 +93,8 @@ header a:hover {
   color: rgb(240, 240, 145);
 }
 
-/*------------------------ Header Wrap  ------------------------ */
+/*------------------------ HEADER  ------------------------ */
 .header {
-  background: #1CBCAD;
   background: url(../img/hero2-pond.jpg) no-repeat center #263948;
   background-size: cover;
   flex-flow: row nowrap;  
@@ -127,25 +114,24 @@ header a:hover {
 .container {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
-.header h1 {
+.container h1 {
     color: white;
     font-size: 3.75em;
     font-weight: bold;
-    padding: 35% 5% 0% 5%;
+    padding: 35% 5% 10% 5%;
     margin: 0;
     width: 90%;
     text-shadow: 3px -4px 20px black;
+    display: flex;
+    text-align: center;
 }
 
-.header h3 {
-  font-size: 20px;
-  color: black;
-  padding: 20% 0 0 0;
-}
-
+.header h3,
 .header h3 a {
+  font-size: 20px;
   color: black;
   padding: 20% 0 0 0;
 }
@@ -154,9 +140,8 @@ header a:hover {
   color: rgb(240, 240, 145);
 }
 
-
-/*------------------------ About Wrap  ------------------------ */
-.about {
+/*------------------------ ABOUT ------------------------ */
+.about-resume {
   background: #2c3e50;
   padding-top: 0px;
   padding-bottom: 60px;
@@ -164,13 +149,17 @@ header a:hover {
 } 
 
 
-.about i {
+.about-resume i {
   color: white;
   font-size: 20px;
   padding-right: 8px;
   vertical-align: middle;
 }
 
+
+/*------------------------ WORK  ------------------------ */
+
+/*------------------ FOOTER -------------------- */
 .footer {
   background: #2f2f2f;
   padding-top: 50px;
@@ -193,56 +182,8 @@ span {
   color: #F6D55C;
 }
 
-/*------------------------ WORK  ------------------------ */
-
-.row {
-  margin: 0;
-}
-
-/*------------------ Social Icons -------------------- */
-
-.footer i {
-  padding-right: 8px;
-  /*color: #1abc9c;*/
-}
-
 /* Global Values */
 
-.desc {
-  padding-top: 50px;
-}
-
-.desc p {
-  color: #2f2f2f;
-}
-
-.desc t {
-  color: #34495e;
-  font-weight: 700;
-}
-
-.desc imp {
-  padding: 6px;
-  color: white;
-  background: #34495e;
-}
-
-.desc more {
-  color: #616669;
-}
-
-
-sm {
-  font-size: 12px;
-}
-
-.desc .col-lg-3 {
-  text-transform: uppercase;
-}
-
-.container-desc .row p.tight {
-  margin-bottom: 10px;
-}
 
 /* define some CSS3 animations: */
 body {

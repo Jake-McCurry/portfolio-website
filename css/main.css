@@ -98,7 +98,7 @@
      Author's custom styles
      ========================================================================== */
   
-/*-------------------- My Personal Website --------------------*/
+/*--------------------  MOBILE STYLES --------------------*/
 
 /*-------------------- BASE STYLES --------------------*/
 
@@ -110,6 +110,7 @@ body {
     color: #f7f5f5;
     font-family: 'Open Sans', Sans-Serif;
     font-size: 1em;
+    margin: 0;
 }
 
 ul, 
@@ -124,7 +125,7 @@ a {
   }
 
 a:hover, i:hover {
-   color: rgb(240, 240, 145);
+   color: #ED553B;
 }
 
 .content-wrapper {
@@ -133,7 +134,7 @@ a:hover, i:hover {
     width: 100%;
 }
 
-/*-------------------- GLOBAL & MOBILE | HEADER & FOOTER --------------------*/
+/*-------------------- GLOBAL | HEADER & FOOTER --------------------*/
 
 /* HEADER */
 
@@ -156,8 +157,7 @@ nav ul {
     justify-content: space-evenly;
 }
 
-li,
-a,
+li a,
 i {
     color: white;
 }
@@ -192,6 +192,11 @@ i {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 3% 0;
+}
+
+.connect h2 { 
+    margin: 17.5px;
 }
 
 .social-links,
@@ -219,8 +224,12 @@ i {
     font-size: .5em;
 }
 
+.email p a {
+    color: white;
+}
 
-/* -------------- Mobile Styles - Homepage  -------------- */
+
+/* -------------- HOMEPAGE -------------- */
       
 /* Hero Area */
 
@@ -229,6 +238,10 @@ i {
     background: url("../img/hero.jpg") center no-repeat #263948 ;
     background-size: cover;
     flex-flow: row nowrap;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
 }
 
 .hero h1 {
@@ -254,6 +267,14 @@ i {
     justify-content: center;
     flex-flow: row wrap;
     margin: 0;
+    padding-bottom: 5%;
+}
+
+.portfolio h2 {
+    margin: 10% 0 0 0;
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 
 
@@ -266,34 +287,38 @@ i {
 .portfolio article figure {
     width: 100%;
     display: flex;
-    margin: 5% 0;
+    margin: 10% 0 0 0;
     justify-content: center;
 }
 
 .jubilee-pic {
     margin: 0;
-    background: url(../img/jubilee-austen.png) center no-repeat #2a423a;
-    background-size: cover;
+    background: url(../img/jubilee.png) center top no-repeat #263948;
+    background-size: contain;
+    padding-bottom: 70%;
 }
 
 .rogue-pic {
     margin: 0;
-    background: url(../img/rogue.png) center no-repeat #2a423a;
-    background-size: cover;
+    background: url(../img/rogue.png) center top no-repeat #263948;
+    background-size: contain;
+    padding-bottom: 70%;
 }
 
 .mccurry-pic {
     margin: 0;
-    background: url(../img/jake-mccurry.png) center no-repeat #2a423a;
-    background-size: cover;
+    background: url(../img/jake-mccurry.png) center top no-repeat #263948;
+    background-size: contain;
+    padding-bottom: 70%;
 }
 
 
 .jubilee h2 {
     margin: 0 0 50px 0;
 }
+
 h3 {
-    Margin: 0 20px 0 0;
+    Margin: 0;
 }
 
 span {
@@ -311,7 +336,7 @@ span {
 }
 
 .about article h2 {
-    margin: 2% 0 70px 10px;
+    margin: 2% 0 55px 10px;
     text-align: center;
 }
 
@@ -321,13 +346,169 @@ span {
 
 .about-body {
     display: flex;
-    width: 80%;
+    width: 75%;
     font-size: .875rem;
 }
 
 .about article p {
     padding: 0 2% 15% 2%;
+}
+
+/* -------------- MOBILE STYLES - RESUME PAGE  -------------- */
+/*-------- BASE --------*/
+
+.edu-container,
+.work-container, 
+.accomplishments {
+    display: flex;
+    margin: 5%;
+    flex-flow: row wrap;
+}
+
+.edu-container div {
+    padding: 2% 0;
+}
+
+.indent {
+    padding-left: 5%;
+}
+
+h5 {
+    font-size: 1.25em;
+    width: 100%;
+}
+
+/*-------- HEADER --------*/
+
+.header {
+    background: url(../img/hero2-pond.jpg) no-repeat center #263948;
+    flex-flow: row nowrap;  
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+  
+.container h1 {
+    color: white;
+    font-size: 3.75em;
+    font-weight: bold;
+    padding: 35% 5% 10% 5%;
+    margin: 0;
+    width: 90%;
+    text-shadow: 3px -4px 20px black;
+    display: flex;
+    justify-content: center;
+}
+  
+.header h3,
+.header h3 a {
+    font-size: 20px;
+    color: black;
+    padding: 20% 0 0 0;
+}
+  
+.header h3 a:hover {
+    color: rgb(240, 240, 145);
+}
+  
+/*-------- ABOUT --------*/
+
+.about-resume {
+    background: #2c3e50;
+    padding: 5%;
+    color: white;
+} 
+
+.about-resume .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-resume h5 {
+    margin: 5% 0;
+}
+
+.about-resume i {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+
+/*-------- EDUCATION --------*/
+
+/* Bar Separating Sections  */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;  
+}
+
+.edu-container, .work-container, .accomplishments {
+    color: black;
+}
+
+a {
+    color: #263948;
+  
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+  
+.container p a {
+    color: white;
+    font-weight: normal;
+    font-size: .75em;
+}
+
+.email-resume a {
+    color: white;
+}
+  
+/*-------- WORK --------*/
+.work-container li {
+    font-weight: lighter;
+    list-style-type: circle;
+}
     
+.work-container h6 {
+    font-size: 1em;
+    margin: 2.44em 0 1.12em 0;
+}
+
+.work-container h5 {
+    margin-bottom: 1%;
+}
+
+.work-container i {
+    color: black;
+    font-size: .875em;
+}
+
+strong {
+    color: #ED553B;
+}
+
+
 /* ==========================================================================
    Media Queries for responsive design - override the primary ('mobile first') styles.
    ========================================================================== */
@@ -338,9 +519,111 @@ span {
    Media Queries for responsive design - override the primary ('mobile first') styles.
    ========================================================================== */
 
-   @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* Tablet Breakpoint */
-    /* 64+64+80(8)=768 - Margins: 16.6% */
     
-    /* General styles */
-  
+    /* Homepage styles */
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1 {
+    width: 80%;
+    font-size: 3.25rem;
+}
+
+.text {
+    width: 35%;
+    margin: 50px 0;
+}
+
+.text p {
+    font-size: .875em;
+}
+
+.portfolio article figure {
+    width: 60%;
+    padding: 0 0;
+    margin: 50px 0;
+}
+
+.portfolio article {
+    justify-content: space-between;
+}
+
+/* About */
+
+.about-body {
+    width: 70%
+}
+
+/* Footer */
+
+.email, 
+.social-links {
+    width: 40%;
+}
+
+/* Resume Page Tablet Styles */
+/* Resume Page Tablet Styles */
+/* Resume Page Tablet Styles */
+
+
+
+@media only screen and (min-width: 1200px) {
+    /* Desktop Breakpoint */
+    
+    /* Homepage styles */
+
+html {
+    font-size: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3.75rem;   
+}
+
+/* Portfolio */
+
+.portfolio h2 {
+    margin: 5% 0;
+}
+
+.text {
+    font-size: .95em;
+}
+
+
+/* About */ 
+
+.about-body {
+    font-size: 1em;
+    width: 68%;
+}
+
+.about article p {
+    padding-top: 3%;
+}    
+
+/* Footer */
+
+.fontawesome-icon i {
+    font-size: 1.5em;
+}
+
+.email, 
+.social-links {
+    width: 50%;
+    padding: 5% 0;
+}
+
+
+/* Resume Page Tablet Styles */
+/* Resume Page Tablet Styles */
+/* Resume Page Tablet Styles */
+
+.edu-container div {
+    width: 100%;
+}
