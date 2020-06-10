@@ -1,5 +1,4 @@
         <!-- ********** My Personal Website ********** -->
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -27,7 +26,7 @@
     CREATE PAGES FOR THE OTHER LINKS.
     CREATE SERVICE PAGE.
 ******************************************** -->
-                        <li><a href="../portfolio-website/resume/index.html">resume</a></li>                            
+                        <li><a href="resume/index.html">resume</a></li>                            
                         <li><a href="#contact">contact</a></li>
                     </ul>
                  </nav> 
@@ -38,12 +37,25 @@
 <!-- ********************** MAIN ********************** -->
         <main> 
             <section class="hero"> 
-                <h1> Hi, I'm <span id="jake">Jake</span> McCurry, Front-End Developer of clean & responsive code. </h1>
+                <h1><span id="jake">Jake</span> McCurry | Web Developer </h1>
             </section>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2> my portfolio </h2>
                         
+                <!-- ***** Unplugged Retreat ***** -->
+                <article> 
+                    <figure class="unplugged-pic">
+                    </figure>
+                    <div class="text">
+                        <h3> Unplugged Retreat Project </h3>
+                        <p> I coded this fully responsive site from a design comp .</p>
+                        <p><span>Tools Used:</span> Photoshop | HTML5 | CSS3 | Visual Studio Code | Google Fonts | W3C Validation | Git/Github. </p> 
+                        <p><span>Highlight</span>: Accomplishing a responsive site with flexbox and mobile first techniques and focus on accessibility.</p>
+                        <p><span>Challenge</span>: The transition from floating containers to using flexbox was different but well worth it!  </p>
+                    </div>
+                </article>                     
+                
                 <!-- ***** Jubilee Austen ***** -->
                 <article> 
                     <figure class="jubilee-pic">
@@ -51,7 +63,7 @@
                     <div class="text">
                         <h3> Jubilee Austen Project </h3>
                         <p> My first project was creating a one page static site for fictitious new developer Jubilee Austen.</p>
-                        <p><span>Tools Used:</span> Photoshop | HTML5 | CSS3 | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p> 
+                        <p><span>Tools Used:</span> Photoshop | HTML5 | CSS3 | Visual Studio Code | Google Fonts | W3C Validation | Git/Github. </p> 
                         <p><span>Highlight</span>: Learning new technologies (VSC) and skills (floating)! It gave me a sense of wonder (like a child jumping in a puddle for the first time).</p>
                         <p><span>Challenge</span>: My curiosity. With each new concept I wanted to study for hours, but I set time limits in order to move on. </p>
                     </div>
@@ -63,10 +75,10 @@
                     </figure>
                      <div class="text">
                         <h3> Rogue Pickings Website </h3>
-                        <p> Tasked with translating a Photoshop design comp for a food truck business into HTML & CSS I focused on honing my boarders and floating skills. </p>
-                        <p><span>Tools Used:</span> Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C HTML & CSS Validation. </p>
-                        <p><span>Highlight:</span> New learning is always exciting for me - the box model specifically this time around. </p>
-                        <p><span>Challenge:</span> Focusing on borders and floats was challenging in that I had to deepen my understanding of the box model and how each one interacts. This required lots of Googling and article reading.</p>
+                        <p> I translated a Photoshop design for a food truck into and focused on honing my boarder and floating skills. </p>
+                        <p><span>Tools Used:</span> Photoshop | HTML5 | CSS | Visual Studio Code | Google Fonts | W3C Validation | Git/Github </p>
+                        <p><span>Highlight:</span> Learning is actually exciting for me - when I finally go the boxes in the right positions I was ecstatic. </p>
+                        <p><span>Challenge:</span>  For my 2nd ever project I was challenged on the floating method most. </p>
                     </div>
                 </article>
                 
@@ -77,32 +89,53 @@
                     <div class="text">
                         <h3> My first personal project! </h3>
                         <p> I had a lot of fun building my first personal site. </p>
-                        <p><span>Tools Used:</span> Bluehost | Photoshop | HTML5 | CSS | Visual Studio Code | W3C HTML & CSS Validation.</p>
-                        <p><span>Highlights:</span> Navigating Bluehost | Learning FTP | Editing a personal photo into the hero image </p>
-                        <p><span>Challenges:</span> I really wanted to make this a responsive site - I jumped in and did what I could - until I realized I need to learn mroe before going full tilt responive. I also had some trouble with boxes & floating. </p>
+                        <p><span>Tools Used:</span> Bluehost | Photoshop | HTML5 | CSS | Visual Studio Code | W3C Validation | Git/Github.</p>
+                        <p><span>Highlights:</span> Learning Web Hosting & FTP | Editing a personal photo for the background. </p>
+                        <p><span>Challenges:</span> I really wanted to make this a responsive site - I jumped in and did what I could - until I realized I need to learn more before going full tilt responive. </p>
                     </div>
                 </article>
             </section>
 
             <!-- ***** ABOUT SECTION ***** -->   
-            <section class="about">
+            <section class="about" id="about">
                 <article>
                      <h2> about me </h2>
                      <h3 class="about-body"> I love coding and learning! </h3>
                      <p class="about-body"> After discovering just that through Skillcrush, I left the grind and moved my 
-                            growing family to Washington State in January 2020 to hone the necessary 
-                            skills to become a developer. I now am passionate about writing clean and refined code, learning 
+                            growing family to Washington State in January 2020 to hone  
+                            my web developer skills. I am passionate about quality - accessible - & responsive code, learning 
                             new technologies, and spending time with my amazing family in the beautiful Cascade Mountains. </p>
                 </article>
             </section>
         </main>
 
 <!-- ********************** FOOTER ********************** -->
-        <footer class="contact">
+        <footer class="contact" id="contact">
             <div class="footer-wrapper">
                 <div class="connect">
                     <h2>let's connect</h2>
                 </div>
+
+                <!-- ***** FORM ***** -->   
+                <form action="mailto:jakewmccurry@gmail.com" method="POST" enctype="text/plain">
+                    <ul>
+                        <li>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                          <label for="mail">E-mail:</label>
+                          <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                          <label for="msg">How can I help?</label>
+                          <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button>Submit</button>
+                        </li>
+                    </ul>
+                </form>
                 <div class="social-links">
                     <article>
                         <p class="fontawesome-icon">
@@ -126,4 +159,10 @@
             </div><!--/.footer-wrapper-->
         </footer>
     </body>
+<script>
+  hbspt.forms.create({
+	portalId: "7858953",
+	formId: "95cd80b0-d040-40a7-8093-a509f319522e"
+});
+</script>
 </html>
