@@ -124,9 +124,6 @@ a {
     font-weight: lighter;
   }
 
-a:hover, i:hover {
-   color: #ED553B;
-}
 
 .content-wrapper {
     display: flex;
@@ -143,8 +140,13 @@ nav ul li a:link, a:visited {
     font-size: 1em;
     text-decoration: none;
     font-weight: lighter;
+    color: white;
 }
 
+a:hover, i:hover {
+    color: #ED553B;
+ }
+ 
 nav,
 nav ul {
     display: flex;
@@ -531,7 +533,7 @@ hr {
     color: black;
 }
 
-a {
+.edu-container a {
     color: #263948;
   
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
