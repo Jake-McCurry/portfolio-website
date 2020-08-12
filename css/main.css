@@ -295,10 +295,9 @@ i {
 
 .hero {
     display: flex;
-    background: url("../img/hero.jpg") center no-repeat #263948 ;
     background-size: cover;
     flex-flow: row nowrap;
-
+    background-color: #263948;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -309,7 +308,7 @@ i {
     font-size: 2.25em;
     font-weight: bold;
     padding: 10% 5% 20% 5%;
-    margin: 0;
+    margin: 10% 0 10% 0;
     width: 90%;
     justify-content: center; 
     text-align: center;
@@ -357,6 +356,18 @@ i {
 .unplugged-pic {
     margin: 0;
     background: url(../img/unplugged.png) center top no-repeat #263948;
+    background-size: contain;
+    padding-bottom: 70%;
+}
+.magicball-pic {
+    margin: 0;
+    background: url(../img/magicball.png) center top no-repeat #263948;
+    background-size: contain;
+    padding-bottom: 70%;
+}
+.lolcat-pic {
+    margin: 0;
+    background: url(../img/lolcat.png) center top no-repeat #263948;
     background-size: contain;
     padding-bottom: 70%;
 }
