@@ -122,8 +122,11 @@ li,
 a {
     text-decoration: none;
     font-weight: lighter;
-    color: white;
   }
+
+a {
+    color: white;
+}
 
 
 .content-wrapper {
@@ -248,7 +251,6 @@ i {
   }
   
   ul {
-    list-style: none;
     padding: 0;
     margin: 0;
   }
@@ -296,6 +298,7 @@ i {
 .hero {
     display: flex;
     background-size: cover;
+    background: url(../img/hero.png) center top no-repeat black;    
     flex-flow: row nowrap;
     background-color: #263948;
     -webkit-background-size: 100%;
@@ -347,7 +350,8 @@ i {
 }
 
 .portfolio article figure {
-    width: 100%;
+    width: 500px;
+    height: 200px;
     display: flex;
     margin: 10% 0 0 0;
     justify-content: center;
@@ -355,42 +359,35 @@ i {
 
 .unplugged-pic {
     margin: 0;
-    background: url(../img/unplugged.png) center top no-repeat #263948;
+    background: url(../img/unplugged.jpg) center top no-repeat #263948;
     background-size: contain;
-    padding-bottom: 70%;
+    padding-bottom: 25%;
 }
 .magicball-pic {
     margin: 0;
-    background: url(../img/magicball.png) center top no-repeat #263948;
+    background: url(../img/magic.jpg) center top no-repeat #263948;
     background-size: contain;
-    padding-bottom: 70%;
+    padding-bottom: 25%;
 }
 .lolcat-pic {
     margin: 0;
-    background: url(../img/lolcat.png) center top no-repeat #263948;
+    background: url(../img/lolcat.gif) center top no-repeat #263948;
     background-size: contain;
-    padding-bottom: 70%;
+    padding-bottom: 25%;
 }
 
 .jubilee-pic {
     margin: 0;
-    background: url(../img/jubilee.png) center top no-repeat #263948;
+    background: url(../img/jubilee.jpg) center top no-repeat #263948;
     background-size: contain;
-    padding-bottom: 70%;
+    padding-bottom: 25%;
 }
 
 .rogue-pic {
     margin: 0;
-    background: url(../img/rogue.png) center top no-repeat #263948;
+    background: url(../img/rogue.jpg) center top no-repeat #263948;
     background-size: contain;
-    padding-bottom: 70%;
-}
-
-.mccurry-pic {
-    margin: 0;
-    background: url(../img/jake-mccurry.png) center top no-repeat #263948;
-    background-size: contain;
-    padding-bottom: 70%;
+    padding-bottom: 25%;
 }
 
 
@@ -417,7 +414,7 @@ span {
 }
 
 .about article h2 {
-    margin: 2% 0 55px 10px;
+    margin: 2% 0 25px 10px;
     text-align: center;
 }
 
@@ -432,18 +429,27 @@ span {
 }
 
 .about article p {
-    padding: 0 2% 15% 2%;
+    padding: 0 10% 1% 2%;
+    font-size: .875rem;
 }
 
 /* -------------- MOBILE STYLES - RESUME PAGE  -------------- */
 /*-------- BASE --------*/
 
+.about-resume, .main-resume {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .edu-container,
 .work-container, 
-.accomplishments {
+.accomplishments,
+.about-resume {
     display: flex;
-    margin: 5%;
+    margin: 2.5% 5%;
     flex-flow: row wrap;
+    width: 75%
 }
 
 .edu-container div {
@@ -493,6 +499,18 @@ h5 {
     display: flex;
     justify-content: center;
 }
+
+.container article .fontawesome-icon {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.container article p {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
   
 .header h3,
 .header h3 a {
@@ -507,10 +525,18 @@ h5 {
   
 /*-------- ABOUT --------*/
 
+.resume-body {
+background-color: gray;
+}
+
 .about-resume {
     background: #2c3e50;
     padding: 5%;
     color: white;
+    display: flex;
+    align-content: center;
+    width: 70%;
+    margin-top: 5%;
 } 
 
 .about-resume .container {
@@ -543,6 +569,8 @@ hr {
 
 .edu-container, .work-container, .accomplishments {
     color: black;
+    background-color: white;
+    padding-left: 5%;
 }
 
 .edu-container a {
@@ -568,7 +596,7 @@ hr {
 /*-------- WORK --------*/
 .work-container li {
     font-weight: lighter;
-    list-style-type: circle;
+    list-style-type: none;
 }
     
 .work-container h6 {
@@ -678,7 +706,7 @@ html {
 }
 
 .text {
-    font-size: .95em;
+    font-size: .75em;
 }
 
 
@@ -720,4 +748,8 @@ form {
 
 .edu-container div {
     width: 100%;
+}
+
+.ud ul li, .letu ul li {
+    color: black;
 }
