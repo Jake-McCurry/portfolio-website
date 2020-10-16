@@ -295,6 +295,12 @@ i {
       
 /* Hero Area */
 
+
+
+
+
+
+
 .hero {
     display: flex;
     background-size: cover;
@@ -320,6 +326,29 @@ i {
 
 #jake {
     color: #ED553B;
+}
+
+.glow span {
+    color: #fff;
+    transition: all 300ms;
+}
+.glow span:hover {
+    text-shadow: 0 0 10px #ffffff,
+                 0 0 30px #ffffff,
+                 0 0 80px #ffffff,
+                 0 0 120px #ffffff,
+                 0 0 200px #ffffff;
+}
+
+/* Skills */
+
+.skill, .skill h2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    color: black;
+    font-family: 'Open Sans', Sans-Serif;
+
 }
 
 
@@ -356,6 +385,7 @@ i {
     margin: 10% 0 0 0;
     justify-content: center;
 }
+
 
 .unplugged-pic {
     margin: 0;
